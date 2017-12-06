@@ -1,7 +1,6 @@
 .Footer {
-    display: flex;
-    width: 100%;
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: #80000B;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
