@@ -1,27 +1,27 @@
 import React from 'react';
 
-import { Segment, Container, Grid, Header, List } from 'semantic-ui-react';
+import { Segment, Container, Grid, Header } from 'semantic-ui-react';
 
 const footer = (props) => {
     //stuff
     return(
-            <Segment inverted vertical style={{ padding: '5em 0em' }}>
+            <Segment inverted vertical 
+                style={{
+                    padding: '5em 0em',
+                    position: 'absolute',
+                    right: '0',
+                    bottom: '0',
+                    left: '0'
+                    }}>
                 <Container>
                     <Grid divided inverted stackable>
                         <Grid.Row>
-
-                            <Grid.Column width={3}>
-                                <Header inverted as='h4' content='About' />
-                                <List link inverted>
-                                    <List.Item as='a'>Sitemap</List.Item>
-                                    <List.Item as='a'>Contact Us</List.Item>
-                                </List>
+                            <Grid.Column>
+                                <Header as='h4' inverted
+                                    style= {{
+                                        textAlign: 'center'
+                                    }}>Copyright © 2017 | Gustavo Martinez</Header>
                             </Grid.Column>
-                        
-                            <Grid.Column width={7}>
-                                <Header as='h4' inverted>Copyright © 2017 | Gustavo Martinez</Header>
-                            </Grid.Column>
-
                         </Grid.Row>
                     </Grid>
                 </Container>
