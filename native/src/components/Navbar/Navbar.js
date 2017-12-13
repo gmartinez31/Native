@@ -16,8 +16,8 @@ class Navbar extends Component {
             <Segment inverted>
                 <Menu inverted pointing secondary>
                     <Menu.Item 
-                        name='home' 
-                        active={activeItem === 'home'} 
+                        name='Native' 
+                        active={activeItem === 'Native'} 
                         onClick={this.handleItemClick} />
 
                     <Menu.Menu position='right'>
